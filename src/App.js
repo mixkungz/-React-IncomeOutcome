@@ -1,21 +1,27 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import 
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+class App extends React.Component{
+  render(){
+    return(
+        <div>
+          <form>
+            <input type="text"/>
+            <ButtonSubmit />
+            <ButtonReset />
+          </form>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
+      );
   }
 }
-
-export default App;
+class ButtonSubmit extends React.Component{
+  render(){
+    return <input type="submit" value="Submit"/>;
+  }
+}
+class ButtonReset extends React.Component{
+  render(){
+    return <input type="reset" value="Reset"/>;
+  }
+}
+export default App
