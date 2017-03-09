@@ -17,9 +17,15 @@ class App extends React.Component{
   }
 
   submit(e){
+    const swal = require('sweetalert2')
     e.preventDefault();
     if(this.state.money <= 0){
-      alert('Money must more than 0')
+      swal({
+        title: 'Error!',
+        text: 'Money must more than 0',
+        type: 'error',
+        confirmButtonText: 'Continue'
+      })
     }
     else{
       this.state.data.push({
