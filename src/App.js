@@ -74,7 +74,7 @@ class App extends React.Component{
   }
   render(){
     return(
-        <div className="container" style={{textAlign:'center'}}>
+        <div className="container" style={{textAlign:'center',marginTop:'5em'}}>
           <form onSubmit={this.submit.bind(this)}>
             <input id="inputmoney" type="number" name="money" value={this.state.money} onChange={this.updateState.bind(this)}/>
             <select id="selecttype" name="type" onChange={this.updateState.bind(this)} style={{marginLeft:'1em'}}>
