@@ -98,6 +98,8 @@ class App extends React.Component{
             </div>
           </div>
           <p>เหลือ : {this.calculate()}</p>
+          <a href="https://facebook.com/pcr.mixkungz" target="_blank"><i className="fa fa-facebook-square" style={{fontSize:'1.7em'}}></i></a>
+          <a href="https://github.com/mixkungz/reactbeginning" target="_blank"><i className="fa fa-github" style={{fontSize:'1.7em',marginLeft:'0.5em'}}></i></a>
         </div>
       );
   }
