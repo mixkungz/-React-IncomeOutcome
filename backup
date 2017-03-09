@@ -1,0 +1,57 @@
+{/*
+class TestB extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = { }
+  }
+
+  render() {
+    return (
+      <div>
+        <input value="ant" type="button" onClick={this.props.read} />
+        <input value="bird" type="button" onClick={this.props.read} />
+        <input value="cat" type="button" onClick={this.props.read} />
+      </div>
+    )
+  }
+}
+
+class TestA extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      msg: 'hello mars',
+      box: '<no message>'
+    }
+  }
+
+  testfunc() {
+    alert('testA')
+  }
+
+  readValue(e) {
+    this.setState({
+      msg: `hello ${e.target.value}`,
+    })
+    // alert(e.target.value)
+  }
+
+  handleTextChange(e) {
+    this.setState({
+      box: e.target.value,
+    })
+  }
+
+  render() {
+    return (
+      <div>
+        <p>{this.state.msg}</p>
+        <TestB dog={this.testfunc} read={this.readValue.bind(this)}/>
+
+        <h3>{this.state.box}</h3>
+        <input type="text" onChange={this.handleTextChange.bind(this)}/>
+      </div>
+    )
+  }
+}
+*/}
