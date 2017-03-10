@@ -65,6 +65,9 @@ class App extends React.Component{
       else{
         x-=parseInt(this.state.data[i].money)
       }
+      if(x<0){
+        x=0;
+      }
     }
     return x
   }
