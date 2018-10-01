@@ -1,4 +1,5 @@
 import React from 'react';
+const swal = require('sweetalert2')
 
 class App extends React.Component{
   constructor(props) {
@@ -16,8 +17,7 @@ class App extends React.Component{
     });
   }
   submit(e){
-    const swal = require('sweetalert2')
-    e.preventDefault();
+    e.preventDefault()
     if(this.state.money <= 0){
       swal({
         title: 'Error!',
