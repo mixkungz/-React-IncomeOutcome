@@ -4,8 +4,8 @@ class App extends React.Component{
   constructor(props) {
     super(props)
     this.state = {
-      "money":0,
-      "type":"income",
+      money:0,
+      type:"income",
       data :[]
     }
   }
